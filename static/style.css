@@ -1,0 +1,49 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b1020;
+  --panel: #151d33;
+  --muted: #aab5ca;
+  --text: #f5f7ff;
+  --accent: #8b9cff;
+  --accent2: #58d6c7;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; color: var(--text);
+  background: radial-gradient(circle at top right, #26335e 0, transparent 38%), var(--bg);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+.page { width: min(760px, 92%); margin: 0 auto; padding: 58px 0 32px; }
+.eyebrow { color: var(--accent2); font-size: .72rem; letter-spacing: .16em; font-weight: 800; }
+h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1.02; margin: 14px 0; letter-spacing: -.055em; }
+h1 span { color: var(--accent); }
+.intro { color: var(--muted); font-size: 1.05rem; line-height: 1.6; max-width: 570px; }
+.panel, .result, .examples {
+  background: rgba(21, 29, 51, .94); border: 1px solid #2a3654;
+  border-radius: 18px; padding: 24px; margin-top: 28px;
+}
+label { display: block; margin-bottom: 10px; font-weight: 700; }
+textarea {
+  width: 100%; resize: vertical; border: 1px solid #3a486a; border-radius: 12px;
+  background: #0d1428; color: var(--text); padding: 15px; font: inherit; outline: none;
+}
+textarea:focus { border-color: var(--accent); }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 15px; }
+button {
+  border: 0; border-radius: 10px; padding: 12px 18px; font: inherit;
+  font-weight: 750; cursor: pointer; background: var(--accent); color: #10162b;
+}
+button.secondary, .chip { background: #293653; color: var(--text); }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.hint { color: var(--muted); font-size: .88rem; min-height: 1.2em; }
+.result h2 { margin: 5px 0; font-size: 1.8rem; color: var(--accent); }
+.result p:not(.eyebrow) { color: var(--muted); }
+.confidence-row { display: flex; justify-content: space-between; margin-top: 22px; font-size: .9rem; }
+.meter { height: 9px; background: #303c59; border-radius: 99px; overflow: hidden; margin-top: 9px; }
+.meter div { height: 100%; width: 0; background: linear-gradient(90deg, var(--accent), var(--accent2)); transition: width .3s; }
+.hidden { display: none; }
+.examples h2 { font-size: 1.1rem; margin-top: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 9px; }
+.chip { font-size: .86rem; padding: 9px 12px; }
+footer { color: #8290aa; text-align: center; font-size: .8rem; margin-top: 34px; }
+@media (max-width: 520px) { .page { padding-top: 35px; } .panel, .result, .examples { padding: 18px; } }

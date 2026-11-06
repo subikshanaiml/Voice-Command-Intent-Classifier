@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice Command Intent Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">NLP + MACHINE LEARNING PROJECT</p>
+      <h1>Voice Command<br><span>Intent Classifier</span></h1>
+      <p class="intro">Speak or type a command and let the model identify what you intend to do.</p>
+    </header>
+
+    <section class="panel">
+      <label for="command">Your command</label>
+      <textarea id="command" rows="3" placeholder="Example: What time is it?"></textarea>
+      <div class="actions">
+        <button id="micButton" class="secondary" type="button">🎙 Speak</button>
+        <button id="classifyButton" type="button">Classify intent</button>
+      </div>
+      <p id="speechStatus" class="hint" aria-live="polite">You can type a command or use the microphone.</p>
+    </section>
+
+    <section id="result" class="result hidden" aria-live="polite">
+      <p class="eyebrow">PREDICTION</p>
+      <h2 id="intent">—</h2>
+      <p id="message"></p>
+      <div class="confidence-row">
+        <span>Model confidence</span><strong id="confidence">0%</strong>
+      </div>
+      <div class="meter"><div id="meterFill"></div></div>
+    </section>
+
+    <section class="examples">
+      <h2>Try these commands</h2>
+      <div class="chips">
+        <button class="chip" data-command="Hello there">Hello there</button>
+        <button class="chip" data-command="What time is it?">What time is it?</button>
+        <button class="chip" data-command="Play some music">Play some music</button>
+        <button class="chip" data-command="Set a reminder">Set a reminder</button>
+        <button class="chip" data-command="Open calculator">Open calculator</button>
+        <button class="chip" data-command="What can you do?">What can you do?</button>
+      </div>
+    </section>
+    <footer>Built with Python, Flask, scikit-learn and browser speech recognition.</footer>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

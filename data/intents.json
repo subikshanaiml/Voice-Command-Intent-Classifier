@@ -1,0 +1,91 @@
+{
+  "greeting": [
+    "hello",
+    "hi",
+    "hey there",
+    "good morning",
+    "good evening",
+    "how are you",
+    "hello assistant",
+    "hey"
+  ],
+  "goodbye": [
+    "bye",
+    "goodbye",
+    "see you later",
+    "talk to you later",
+    "exit",
+    "quit",
+    "see you"
+  ],
+  "time": [
+    "what time is it",
+    "tell me the current time",
+    "show me the time",
+    "what is the time now",
+    "can you tell me the time"
+  ],
+  "date": [
+    "what is today's date",
+    "tell me the date",
+    "what day is it today",
+    "show today's date",
+    "which date is it"
+  ],
+  "weather": [
+    "what is the weather",
+    "tell me the weather today",
+    "is it raining",
+    "will it rain today",
+    "weather forecast please"
+  ],
+  "search_web": [
+    "search the web for python tutorials",
+    "look up machine learning",
+    "find information about artificial intelligence",
+    "search for a recipe",
+    "can you look up this topic"
+  ],
+  "play_music": [
+    "play music",
+    "play a song",
+    "start playing music",
+    "play some relaxing songs",
+    "I want to listen to music"
+  ],
+  "stop_music": [
+    "stop the music",
+    "pause the song",
+    "stop playing",
+    "turn off the music",
+    "pause music"
+  ],
+  "set_reminder": [
+    "remind me to call mom",
+    "set a reminder",
+    "create a reminder",
+    "remind me about my meeting",
+    "I need to remember something"
+  ],
+  "open_app": [
+    "open calculator",
+    "launch the browser",
+    "open settings",
+    "start the camera app",
+    "open an application"
+  ],
+  "thank_you": [
+    "thank you",
+    "thanks a lot",
+    "that's helpful",
+    "I appreciate it",
+    "thanks assistant"
+  ],
+  "help": [
+    "help me",
+    "what can you do",
+    "show available commands",
+    "how can you help me",
+    "I need some help"
+  ]
+}
